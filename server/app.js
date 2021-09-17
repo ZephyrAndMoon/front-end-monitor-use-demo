@@ -13,7 +13,7 @@ const {
   processSourceFile,
 } = require("./utils/util");
 
-const post = 3000;
+const port = 3000;
 
 // 配置跨域
 app.use(cor);
@@ -41,10 +41,11 @@ router.post("/monitor", async (ctx) => {
 
 // 监控信息上报
 router.post("/performance", async (ctx) => {
+  console.log("上报的性能信息: ", ctx.request.body);
   ctx.body = undefined;
 });
 
-// sourcemap资源上传并解压
+// sourcemap 资源上传并解压
 router.post("/sourcemapUpload", async (ctx) => {
   const { isSuccess, msg } = await processSourceFile({
     file: ctx.request.files?.file,
@@ -52,10 +53,7 @@ router.post("/sourcemapUpload", async (ctx) => {
     preFunc: () => removeFile("./source"),
     afterFun: () => removeFile("./sourcemap.zip"),
   });
-  ctx.body = {
-    code: isSuccess ? 1 : 0,
-    msg,
-  };
+  ctx.body = msg;
 });
 
 app.use(router.routes()); /*启动路由*/
@@ -64,6 +62,6 @@ app.use(router.allowedMethods());
 /* 设置静态文件目录 */
 app.use(static(__dirname + "/build"));
 
-app.listen(post, () => {
-  console.log(`server is starting at port ${post}`);
+app.listen(port, () => {
+  console.log(`server is running: http://localhost:${port}`);
 });
