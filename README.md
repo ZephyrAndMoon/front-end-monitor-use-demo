@@ -16,3 +16,4 @@ npm run build
 
 错误信息中的 `stack` 通过 `sourcemap` 解析后，对应的源文件位置信息在属性 `stackAnalysisResult` 中
 
+> 项目使用 [sourcemap-upload-webpack-plugin](https://github.com/ZephyrAndMoon/sourcemap-upload-webpack-plugin) 将打包后的 sourcemap 文件上传到服务端
