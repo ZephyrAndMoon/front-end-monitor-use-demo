@@ -8,7 +8,6 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "vue": "^2.6.11",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "element-ui": "^2.15.1",
@@ -18,7 +17,9 @@
     "koa-static": "^5.0.0",
     "koa2": "^2.0.0-alpha.7",
     "node-stream-zip": "^1.15.0",
-    "source-map": "^0.7.3"
+    "source-map": "^0.7.3",
+    "vue": "^2.6.11",
+    "zephyr-monitor": "^1.0.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
