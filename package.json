@@ -19,7 +19,7 @@
     "node-stream-zip": "^1.15.0",
     "source-map": "^0.7.3",
     "vue": "^2.6.11",
-    "zephyr-monitor": "^1.0.2"
+    "zephyr-monitor": "^1.1.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

@@ -9395,6 +9395,11 @@ yargs@^16.0.0:
     y18n "^5.0.5"
     yargs-parser "^20.2.2"
 
+zephyr-monitor@^1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/zephyr-monitor/-/zephyr-monitor-1.1.6.tgz#284685072094a07e56154d7b3cab56d16e5dcc42"
+  integrity sha512-iZQALQQBItmQtbTKeuQKoAaKTtV53X1CLn3vHBOnf+qN+dKLvRRyDoNJfGI4Mbsqldnn8Top2X2wrKX23IGTuQ==
+
 zip-stream@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/zip-stream/-/zip-stream-4.1.0.tgz#51dd326571544e36aa3f756430b313576dc8fc79"
